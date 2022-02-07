@@ -108,3 +108,4 @@ if __name__ == '__main__':
 	for tickie in tickets:
 		response = api.performPost("/issues", "", json.dumps(tickie))
 		print(response.read().decode())
+		# TODO Create error logging
